@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bg.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <embed name="GoodEnough" src="imgs/music.wav" loop="false" hidden="true" autostart="true">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+    <script src="js_files/fat.js"></script>
+    <script src="js_files/hide_flap.js"></script>
+    <script src="voice.js"></script>
+    <!-- <img src="imgs/screen1.jpg"> -->
+    <div id='p5Div' class="layer" ></div>
+
+    <div id="rhyme">
+        <p ><span style="font-family: 'Handylinedfont'; color: #020746;">Wriggle wriggle wriggle </span> and adjust your hat 
+           <br> <span>Maybe the magician in the mirror magically got fat </span></p>
+    </div>
+    <img id="monkey" style="position:absolute;width: 15vw;top: -5vh; z-index: 100;" src="imgs/monkey.png">
+    <img style="position:absolute; top: 59vh;left: -0.8vw; width: 100vw; opacity: 80%; height: 41vh;" src="imgs/grass.png">
+    <img style="position:absolute; left: 13vw; top: -2vh; width: 32vw; opacity: 78%;" src="imgs/tree_d2.png">
+    <img style="position:absolute;left: -8vw; top:-20vh; width: 43vw;" src="imgs/tree_d1.png">
+    <img style="position:absolute; left: 55vw; top: -2vh; width: 32vw; opacity: 78%;" src="imgs/tree_d2.png">
+    <img style="position:absolute; left: 63vw; top: -20vh; width: 43vw;" src="imgs/tree_d1.png">
+    <img style="position:absolute; left: 29vw; top: 65vh; width: 40vw;" src="imgs/path.png">
+    <a href="page2/index.html">
+    <img id="next" style="position: absolute; width: 5vw; z-index: 100; left: 93vw; top: 48vh;" src="imgs/next.png">
+    </a>
+
+    <div id="flap">
+        <img style="position: absolute; width: 46vw; top: -8vh; left: -7.5vw" src="imgs/mirror_ellipse2.png">
+        <p id="flap-text">
+            <span style="color: #c00202;">Ssshhhh! Ssshhhh! Chup chup!</span><br>
+            <span style="color: #860202;">Here is a whispered clue,</span><br>
+
+            <span style="color: #c00202;"> magic, you must follow the words above in blue,</span><br>
+            <span style="color: #860202;">and shout PEEKABOO!!!!</span>
+        </p>
+    </div>
+    
+    <!-- <button id="peek" onclick="hide_flap()">PEEKABOO</button> -->
+
+
+    <img id="hat" style="position:absolute; width: 18vw;transform: rotate(45deg); left:62vw; top: 24vh; z-index: 10;" src="imgs/hats.png" onclick="hide_flap()">
+    <img id="chidiya" src="imgs/bird1.png">
+    <img id="chidiya2" src="imgs/bird2.png">
+    <img id="flr1" src="imgs/yellowflr.png">
+    <img id="flr2" src="imgs/pink_flower.png">
+    
+    <img id="flr3" src="imgs/yellowflr.png">
+    <img id="flr4" src="imgs/pink_flower.png">
+
+
+    
+
+
+</body>
+</html>
