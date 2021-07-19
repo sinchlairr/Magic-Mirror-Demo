@@ -135,7 +135,8 @@ span{
 #chidiya{
   position: absolute;
   width: 10vw;
-  left: 80vw;
+  top: 14vh;
+  left: 77vw;
   animation: fly2 2s infinite;
   
 }
@@ -163,8 +164,8 @@ span{
 }
 #chidiya2{
   position: absolute;
-  left: 15vw;
-  top: 10vh;
+  left: 16vw;
+  top: 18vh;
   width: 10vw;
   animation: fly 2s infinite;
 

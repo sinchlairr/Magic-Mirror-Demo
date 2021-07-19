@@ -38,8 +38,8 @@ let theta = 0;
 let cam;
 
 function setup() {
-  // var cnv = createCanvas(0.42*screen.width, 0.5*screen.height, WEBGL);
-  var cnv = createCanvas(0.42*screen.width, 0.5*screen.height, WEBGL);
+  var cnv = createCanvas(0.42*windowWidth, 0.6*windowHeight, WEBGL);
+  // var cnv = createCanvas(0.42*window.innerWidth, 0.5*window.innerHeight, WEBGL);
   cnv.parent('p5Div');
 
   img = loadImage('assets/cat.jpg');
@@ -52,9 +52,10 @@ function setup() {
 }
 
 function draw() {
+
   background(250);
   noStroke();
-  translate(2, 0, -158);
+  translate(2, 0, -0.1 * windowWidth);
   push();
   rotateY(22);
   // rotateX(2.7);
@@ -68,3 +69,17 @@ function draw() {
   
 
 }
+
+// window.onresize = function() {
+//   // assigns new values for width and height variables
+//   // w = window.innerWidth;
+//   // h = window.innerHeight;  
+//   cnv.size(0.42*screen.width, 0.5*screen.height, WEBGL);
+// }
+
+
+function windowResized() {
+  resizeCanvas(0.42*windowWidth, 0.6*windowHeight);
+}
+
+console.log(windowWidth);
